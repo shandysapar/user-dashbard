@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Dewydolt</title> <!-- title saakong link sa website -->
+    <link rel="stylesheet" href="style.css"> <!-- css nako -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#">DewyDolt</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">Dark Mode</button>
+        </div>
+    </nav>
+    <div class="welcome-message">
+        <h2>Welcome, User!</h2>
+        <p>Welcome to our platform, where we strive to provide you with an exceptional experience!</p>
+    </div>
+    <!-- WORKSPACE -->
+    <div class="workspace-container">
+        <div class="workspace-title-container">
+            <h2 class="workspace-title">Workspaces</h2>
+            <button class="create-workspace" onclick="toggleWorkspaceForm()">+ Create Workspace</button>
+        </div>
+        <div id="workspace-form" class="workspace-form">
+            <h3>Workspace Information</h3>
+            <form id="workspace-info-form">
+                <label for="workspace-name">Workspace Name:</label>
+                <input type="text" id="workspace-name" name="workspace-name" required><br><br>
+
+                <label for="workspace-type">Workspace Type:</label>
+                <select id="workspace-type" name="workspace-type" required>
+                    <option value="school">School</option>
+                    <option value="business">Business</option>
+                    <option value="personal">Personal</option>
+                </select><br><br>
+
+                <label for="workspace-description">Workspace Description:</label><br>
+                <textarea id="workspace-description" name="workspace-description" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="button" onclick="saveWorkspace()">Done</button>
+            </form>
+        </div>
+        <div id="workspace-output" class="workspace-output" style="display: none;">
+            <h3>Workspace Information</h3>
+            <div id="workspace-info"></div>
+            <button onclick="deleteWorkspace()">Delete</button>
+        </div>
+    </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- SIDE BAR -->
+<div class="header">
+    <!-- workspace -->
+<section class="container">
+    <div class="card">
+        <div class="card-image car-1"></div>
+        <h3>Workspace 1</h3>
+        <p>SCHOOL</p>
+        <a href="workspace.html">READ MORE</a>
+    </div>
+    <div class="card">
+        <div class="card-image car-2"></div>
+        <h3>Workspace 2</h3>
+        <p>WORK</p>
+        <a href="workspace.html">READ MORE</a>
+    </div>
+    <div class="card">
+        <div class="card-image car-3"></div>
+        <h3>Workspace 3</h3>
+        <p>PERSONAL </p>
+        <a href="workspace.html">READ MORE</a>
+    </div>
+</section>
+    <!-- SIDE BAR -->
+
+    <div class="side-nav">
+  <div class="user">
+    <img src="images/user.png" class="user-img">
+    <div>
+        <h2>User Profile</h2>
+        <p>Dewydolt</p>
+    </div>
+    <img src="images/star.png" class="star-img">
+    </div>
+    <ul>
+        <li><a href="index.html"><img src="images/dashboard.png"><p>Dashboard</p></li>
+        <li><a href="calendar.html"><img src="images/messages.png"><p>Calendar/Events</p></li>
+        <li><img src="images/setting.png"><p>Settings</p></li>
+    </ul>
+    <ul>
+        <li><img src="images/logout.png"><p>Logout</p></li>
+    </ul>
+    
+    <!-- SIDE BAR -->
+     </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKSPACE</title>
+    <link rel="stylesheet" href="workspace.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Workspaces</h1>
+    </div>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" placeholder="New Task" id="todo-input">
+            <button type="submit">Add +</button>
+        </form>
+
+        <div class="lanes">
+            <div class="swim-lane" id="todo-lane">
+                <h3 class="heading">TO DO</h3>
+            </div>
+
+            <div class="swim-lane" id="in-progress-lane">
+                <h3 class="heading">IN PROGRESS</h3>
+            </div>
+
+            <div class="swim-lane" id="done-lane">
+                <h3 class="heading">DONE</h3>
+            </div>
+        </div>
+
+        <div class="history">
+            <h2>History</h2>
+            <ul id="history-list">
+                <!-- History items will be dynamically added here -->
+            </ul>
+            <button id="clear-history">Clear History</button>
+        </div>
+    </div>
+
+    <script src="todo.js" defer></script>
+</body>
+</html>
